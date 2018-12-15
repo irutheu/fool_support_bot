@@ -3,9 +3,11 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 import logging
 
-bot = telegram.Bot(token='')
+token = os.environ['TELEGRAM_TOKEN']
 
-updater = Updater(token='')
+bot = telegram.Bot(token=token)
+
+updater = Updater(token=token)
 print(bot.get_me())
 
 
