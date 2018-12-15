@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 token = S3Connection(os.environ['TELEGRAM_TOKEN'])
 #token = os.environ['TELEGRAM_TOKEN']
 
-bot = telegram.Bot(token=token)
+#bot = telegram.Bot(token=token)
 
 updater = Updater(token=token)
 dispatcher = updater.dispatcher
