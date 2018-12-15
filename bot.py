@@ -1,9 +1,8 @@
 import telegram
-from boto.s3.connection import S3Connection
+import os
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-token = S3Connection(os.environ['TELEGRAM_TOKEN'])
-#token = os.environ['TELEGRAM_TOKEN']
+token = os.environ['TELEGRAM_TOKEN']
 
 #bot = telegram.Bot(token=token)
 
