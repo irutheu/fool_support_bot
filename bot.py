@@ -1,9 +1,9 @@
-#import telegram
+import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 token = os.environ['TELEGRAM_TOKEN']
 
-#bot = telegram.Bot(token=token)
+bot = telegram.Bot(token=token)
 
 updater = Updater(token=token)
 dispatcher = updater.dispatcher
