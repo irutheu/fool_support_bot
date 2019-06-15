@@ -31,7 +31,7 @@ dispatcher.add_handler(echo_handler)
 def fashion(bot, update):
 	image = bot.getFile(update.message.photo[-1].file_id)
 	
-	bot.send_message(chat_id=update.message.chat_id, photo = image)
+	bot.send_photo(chat_id=update.message.chat_id, photo = image)
 	
 fashion_handler = MessageHandler(Filters.photo, fashion)
 dispatcher.add_handler(fashion_handler)
