@@ -1,9 +1,9 @@
 import telegram
 import os
-import numpy as np
-import cv2
-import h5py
-from tensorflow import keras
+#import numpy as np
+#import cv2
+#import h5py
+#from tensorflow import keras
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 token = os.environ['TELEGRAM_TOKEN']
