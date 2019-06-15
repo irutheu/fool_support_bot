@@ -14,7 +14,7 @@ updater = Updater(token=token)
 dispatcher = updater.dispatcher
 
 # reading model from json file
-model = keras.models.load_model('model.h5')
+#model = keras.models.load_model('model.h5')
 
 def startCommand(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text='Not dead yet')
